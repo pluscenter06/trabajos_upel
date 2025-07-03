@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 Mapa Mental: Historia y Evolución de la Humanidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-brain"></i> Mapa Mental: Cambio Organizacional y Capital Humano</h1>
+            <p class="subtitle">Una guía interactiva sobre la transformación de las organizaciones</p>
+            <div class="authors-container">
+                <div class="authors-header">
+                    <i class="fas fa-users"></i>
+                    <h3 class="authors-title">Equipo de Trabajo</h3>
+                </div>
+                <div class="authors-grid">
+                    <div class="author-card">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h4 class="author-name">Ana Milena Montoya Martínez</h4>
+                    </div>
+                    <div class="author-card">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4 class="author-name">Wilson Javier García Gómez</h4>
+                    </div>
+                    <div class="author-card">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-cog"></i>
+                        </div>
+                        <h4 class="author-name">Jesús Antonio Durán Acevedo</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="timeline-container">
+            <div class="timeline">
+                <!-- Qué cambia en las organizaciones -->
+                <div class="timeline-item" data-period="Qué cambia">
+                    <div class="timeline-marker prehistoria">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="era-header">
+                            <h2>I. ¿Qué es lo que cambia en las organizaciones?</h2>
+                            <div class="era-controls">
+                                <button class="era-toggle" data-era="que-cambia">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <button class="era-image" data-era="que-cambia">
+                                    <i class="fas fa-image"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="era-image-container" id="image-que-cambia" style="display: none;">
+                            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=400&fit=crop" alt="Estructura Organizacional" class="era-image-display">
+                            <div class="image-caption">Estructura organizacional - Jerarquías y procesos en transformación</div>
+                        </div>
+                        <div class="era-details" id="details-que-cambia">
+                            <div class="era-section" data-modal="estructura">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-sitemap"></i> 1. Estructura organizacional</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="jerarquias">Modificaciones en jerarquías y funciones</li>
+                                    <li data-modal="autoridad">Líneas de autoridad y coordinación</li>
+                                    <li data-modal="modelos">Modelos funcionales y matriciales</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="procesos">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-cogs"></i> 2. Procesos internos</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="actividades">Cambios en actividades cotidianas</li>
+                                    <li data-modal="digitalizacion">Digitalización de procesos</li>
+                                    <li data-modal="metodologias">Metodologías ágiles</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="cultura">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-users"></i> 3. Cultura organizacional</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="valores">Transformaciones en valores y creencias</li>
+                                    <li data-modal="actitudes">Actitudes y normas</li>
+                                    <li data-modal="liderazgo">Estilos de liderazgo</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="estrategias">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-chess"></i> 4. Estrategias</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="objetivos">Redefinición de objetivos y visión</li>
+                                    <li data-modal="productos">Líneas de productos o servicios</li>
+                                    <li data-modal="posicionamiento">Posicionamiento competitivo</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="tecnologia">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-microchip"></i> 5. Tecnología</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="herramientas">Nuevas herramientas digitales</li>
+                                    <li data-modal="automatizacion">Automatización e IA</li>
+                                    <li data-modal="bigdata">Big data y sistemas ERP</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="personal">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-user-tie"></i> 6. Personal</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="plantilla">Modificación en la plantilla</li>
+                                    <li data-modal="roles">Reasignación de roles</li>
+                                    <li data-modal="competencias">Desarrollo de competencias</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="productos">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-box"></i> 7. Productos o servicios</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="innovacion">Innovación y diversificación</li>
+                                    <li data-modal="mejora">Mejora en la oferta</li>
+                                    <li data-modal="adaptacion">Adaptación al mercado</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Por qué cambian las organizaciones -->
+                <div class="timeline-item" data-period="Por qué cambian">
+                    <div class="timeline-marker antigua">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="era-header">
+                            <h2>II. ¿Por qué cambian las organizaciones?</h2>
+                            <div class="era-controls">
+                                <button class="era-toggle" data-era="por-que-cambian">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <button class="era-image" data-era="por-que-cambian">
+                                    <i class="fas fa-image"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="era-image-container" id="image-por-que-cambian" style="display: none;">
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=400&fit=crop" alt="Factores de cambio" class="era-image-display">
+                            <div class="image-caption">Factores internos y externos que impulsan el cambio organizacional</div>
+                        </div>
+                        <div class="era-details" id="details-por-que-cambian">
+                            <div class="era-section" data-modal="factores-externos">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-globe"></i> A. Factores del entorno externo</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="competencia">Competencia y presión del mercado</li>
+                                    <li data-modal="mercado">Cambios en el mercado o cliente</li>
+                                    <li data-modal="avances-tec">Avances tecnológicos</li>
+                                    <li data-modal="legales">Cambios legales o regulatorios</li>
+                                    <li data-modal="economicos">Factores económicos, sociales o políticos</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="factores-internos">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-home"></i> B. Factores internos</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="eficiencia">Mejorar la eficiencia</li>
+                                    <li data-modal="desempeno">Problemas de desempeño</li>
+                                    <li data-modal="metas">Nuevas metas estratégicas</li>
+                                    <li data-modal="cultura-obs">Cultura organizacional obsoleta</li>
+                                    <li data-modal="liderazgo">Nuevo liderazgo</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="innovacion">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-lightbulb"></i> C. Innovación y crecimiento</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="adaptacion">Adaptación o liderazgo del cambio</li>
+                                    <li data-modal="diversificacion">Diversificación</li>
+                                    <li data-modal="supervivencia">Supervivencia</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cómo cambian las organizaciones -->
+                <div class="timeline-item" data-period="Cómo cambian">
+                    <div class="timeline-marker media">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="era-header">
+                            <h2>III. ¿Cómo cambian las organizaciones?</h2>
+                            <div class="era-controls">
+                                <button class="era-toggle" data-era="como-cambian">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <button class="era-image" data-era="como-cambian">
+                                    <i class="fas fa-image"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="era-image-container" id="image-como-cambian" style="display: none;">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=400&fit=crop" alt="Proceso de cambio" class="era-image-display">
+                            <div class="image-caption">Proceso de transformación organizacional - Metodologías y modelos</div>
+                        </div>
+                        <div class="era-details" id="details-como-cambian">
+                            <div class="era-section" data-modal="dimensiones">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-expand-arrows-alt"></i> Dimensiones del cambio</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="areas">Afecta todas las áreas de la organización</li>
+                                    <li data-modal="totalidad">Puede ocurrir en la totalidad o partes específicas</li>
+                                    <li data-modal="tipos">Lineal, discontinuo, radical o progresivo</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="modalidades">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-layer-group"></i> Modalidades de cambio</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="superficial">Cambio superficial o de superficie</li>
+                                    <li data-modal="profundo">Cambio profundo o estructural</li>
+                                    <li data-modal="planeado">Cambio planeado</li>
+                                    <li data-modal="espontaneo">Cambio no planeado o espontáneo</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="lewin">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-ice-cream"></i> Modelo de Lewin</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="descongelar">Descongelar</li>
+                                    <li data-modal="cambiar">Cambiar (movimiento)</li>
+                                    <li data-modal="recongelar">Recongelar</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="resistencia">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-shield-alt"></i> Resistencia al cambio</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="tipos-resistencia">Abierta o encubierta</li>
+                                    <li data-modal="origen">Individual o organizacional</li>
+                                    <li data-modal="estrategias">Estrategias para reducirla</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="impulsores">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-rocket"></i> Factores impulsores</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="competencia-entorno">Competencia del entorno</li>
+                                    <li data-modal="crisis">Crisis e innovación tecnológica</li>
+                                    <li data-modal="globalizacion">Globalización y tecnología</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qué es el cambio organizacional -->
+                <div class="timeline-item" data-period="Definición">
+                    <div class="timeline-marker moderna">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="era-header">
+                            <h2>IV. ¿Qué es el cambio organizacional?</h2>
+                            <div class="era-controls">
+                                <button class="era-toggle" data-era="definicion">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <button class="era-image" data-era="definicion">
+                                    <i class="fas fa-image"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="era-image-container" id="image-definicion" style="display: none;">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop" alt="Definición de cambio" class="era-image-display">
+                            <div class="image-caption">Concepto y definición del cambio organizacional</div>
+                        </div>
+                        <div class="era-details" id="details-definicion">
+                            <div class="era-section" data-modal="concepto">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-lightbulb"></i> Concepto fundamental</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="proceso">Proceso de modificación de estructuras</li>
+                                    <li data-modal="procesos">Cambios en procesos y cultura</li>
+                                    <li data-modal="funcionamiento">Modificación de formas de funcionamiento</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="caracteristicas">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-list"></i> Características principales</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="continuo">Proceso continuo y dinámico</li>
+                                    <li data-modal="planificado">Puede ser planificado o espontáneo</li>
+                                    <li data-modal="adaptacion">Respuesta a estímulos internos y externos</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="autores">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-user-graduate"></i> Referencias teóricas</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="katz-kahn">Katz y Kahn (1983)</li>
+                                    <li data-modal="heracleito">Heráclito - Sistemas vivos</li>
+                                    <li data-modal="lewin-gestion">Modelo de Lewin en la gestión</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Capital Humano -->
+                <div class="timeline-item" data-period="Capital Humano">
+                    <div class="timeline-marker contemporanea">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="era-header">
+                            <h2>V. Concepto de Capital Humano</h2>
+                            <div class="era-controls">
+                                <button class="era-toggle" data-era="capital-humano">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <button class="era-image" data-era="capital-humano">
+                                    <i class="fas fa-image"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="era-image-container" id="image-capital-humano" style="display: none;">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=400&fit=crop" alt="Capital Humano" class="era-image-display">
+                            <div class="image-caption">El capital humano como recurso estratégico fundamental</div>
+                        </div>
+                        <div class="era-details" id="details-capital-humano">
+                            <div class="era-section" data-modal="definicion-ch">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-lightbulb"></i> Definición y Valor</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="definicion-ch">¿Qué es el capital humano?</li>
+                                    <li data-modal="conjunto">Capacidades, conocimientos y habilidades</li>
+                                    <li data-modal="talento">Talento integral y motivación</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="impacto-ch">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-chart-line"></i> Impacto Organizacional</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="bienestar">Contribución al bienestar social</li>
+                                    <li data-modal="riqueza">Generador de riqueza y desarrollo</li>
+                                    <li data-modal="productividad">Incremento de productividad y competitividad</li>
+                                </ul>
+                            </div>
+                            <div class="era-section" data-modal="desarrollo-ch">
+                                <div class="section-header">
+                                    <h3><i class="fas fa-graduation-cap"></i> Desarrollo y Sostenibilidad</h3>
+                                    <button class="section-toggle"><i class="fas fa-plus"></i></button>
+                                </div>
+                                <ul class="section-list">
+                                    <li data-modal="competencias">Desarrollo de competencias</li>
+                                    <li data-modal="inversion">Inversión en formación y desarrollo</li>
+                                    <li data-modal="etica">Ética, adaptación y sostenibilidad</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usage-guide-container">
+            <button class="guide-toggle-btn" id="guide-toggle">
+                <i class="fas fa-info-circle"></i>
+                <span>Mostrar Guía de Uso</span>
+            </button>
+            <div class="usage-guide" id="usage-guide" style="display: none;">
+                <div class="guide-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Guía de Uso del Aplicativo</h3>
+                </div>
+                <div class="guide-content">
+                    <div class="guide-section">
+                        <h4><i class="fas fa-mouse-pointer"></i> Navegación</h4>
+                        <ul>
+                            <li><strong>Botones de navegación:</strong> Haz clic en los botones para ir a cada sección</li>
+                            <li><strong>Teclado:</strong> Presiona las teclas 1-5 para navegación rápida</li>
+                            <li><strong>Scroll:</strong> Desplázate por el contenido para explorar todas las secciones</li>
+                        </ul>
+                    </div>
+                    <div class="guide-section">
+                        <h4><i class="fas fa-expand-alt"></i> Interacción</h4>
+                        <ul>
+                            <li><strong>Botón +:</strong> Expande/colapsa el contenido de cada sección</li>
+                            <li><strong>Botón imagen:</strong> Muestra/oculta imágenes representativas</li>
+                            <li><strong>Elementos de lista:</strong> Haz clic para ver información detallada en modales</li>
+                        </ul>
+                    </div>
+                    <div class="guide-section">
+                        <h4><i class="fas fa-lightbulb"></i> Características</h4>
+                        <ul>
+                            <li><strong>Modales informativos:</strong> Información complementaria con citas y referencias</li>
+                            <li><strong>Diseño responsive:</strong> Adaptable a diferentes tamaños de pantalla</li>
+                            <li><strong>Animaciones:</strong> Efectos visuales para mejor experiencia de usuario</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <div class="nav-instructions">
+                <p><i class="fas fa-keyboard"></i> <strong>Navegación rápida:</strong> Presiona las teclas 1-5 para ir directamente a cada sección</p>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn" data-period="Qué cambia">
+                    <i class="fas fa-sync-alt"></i> Qué cambia <span class="nav-number">(1)</span>
+                </button>
+                <button class="nav-btn" data-period="Por qué cambian">
+                    <i class="fas fa-question-circle"></i> Por qué cambian <span class="nav-number">(2)</span>
+                </button>
+                <button class="nav-btn" data-period="Cómo cambian">
+                    <i class="fas fa-cogs"></i> Cómo cambian <span class="nav-number">(3)</span>
+                </button>
+                <button class="nav-btn" data-period="Definición">
+                    <i class="fas fa-book"></i> Definición <span class="nav-number">(4)</span>
+                </button>
+                <button class="nav-btn" data-period="Capital Humano">
+                    <i class="fas fa-users"></i> Capital Humano <span class="nav-number">(5)</span>
+                </button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="bibliography">
+                <h3>Referencias Bibliográficas</h3>
+                <ol>
+                    <li>Katz, D., & Kahn, R. L. (1983). <em>Psicología social de las organizaciones</em>. Trillas.</li>
+                    <li>Lewin, K. (1947). <em>Frontiers in group dynamics: Concept, method and reality in social science</em>. Human Relations, 1(1), 5-41.</li>
+                    <li>Becker, G. S. (1964). <em>Human capital: A theoretical and empirical analysis, with special reference to education</em>. University of Chicago Press.</li>
+                    <li>Schultz, T. W. (1961). <em>Investment in human capital</em>. The American Economic Review, 51(1), 1-17.</li>
+                    <li>Schein, E. H. (2010). <em>Organizational culture and leadership</em>. Jossey-Bass.</li>
+                    <li>Kotter, J. P. (1996). <em>Leading change</em>. Harvard Business School Press.</li>
+                    <li>Cummings, T. G., & Worley, C. G. (2015). <em>Organization development and change</em>. Cengage Learning.</li>
+                    <li>Armstrong, M. (2014). <em>Armstrong's handbook of human resource management practice</em>. Kogan Page.</li>
+                    <li>Ulrich, D. (1997). <em>Human resource champions: The next agenda for adding value and delivering results</em>. Harvard Business School Press.</li>
+                    <li>Porter, M. E. (1985). <em>Competitive advantage: Creating and sustaining superior performance</em>. Free Press.</li>
+                </ol>
+            </div>
+            <p>&copy; 2024 Mapa Mental Interactivo - Cambio Organizacional y Capital Humano</p>
+        </footer>
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <h2 id="modal-title"></h2>
+            </div>
+            <div class="modal-body" id="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
